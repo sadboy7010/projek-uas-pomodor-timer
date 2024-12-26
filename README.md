@@ -37,7 +37,7 @@ Ini adalah aplikasi web yang dirancang untuk membantu kita untuk mengelola sesi 
 ## Teknologi yang Digunakan
 1. Clone repositori:
     ```bash
-    git clone https://github.com/akmalgoldi/Learning-Activity-Support.git
+    git clone https://github.com/sadboy7010/projek-uas-pomodor-timer/upload
     ```
 2. Masuk ke direktori proyek:
     ```bash
