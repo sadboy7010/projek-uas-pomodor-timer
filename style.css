@@ -1,0 +1,145 @@
+body {
+  background-color: #bfff00; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh; 
+  min-height: 100vh; 
+}
+
+.container {
+  padding: 30px;
+  background-color: #ffffff; 
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #f57f17; 
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+  background-color: #fce4b2; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer-settings label {
+  margin: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.timer-settings input {
+  width: 80px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.controls button {
+  background-color: #f57f17; 
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #e65100; 
+}
+
+#timerDisplay {
+  font-size: 3em;
+  font-weight: bold;
+  color: #f57f17;
+}
+
+#statusMessage {
+  font-size: 1.2em;
+  color: #4caf50;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.study-stats {
+  background-color: #fff9c4; 
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.study-stats h2 {
+  font-size: 1.8em;
+  color: #f57f17;
+  margin-bottom: 15px;
+}
+
+.study-stats p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.todo-list {
+  background-color: #fff9c4;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.todo-list h2 {
+  color: #f57f17;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+#taskTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#taskTable th, #taskTable td {
+  padding: 10px;
+  text-align: left;
+}
+
+#taskTable th {
+  background-color: #f57f17;
+  color: white;
+}
+
+.task-input-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-task {
+  background-color: #f57f17;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.add-task:hover {
+  background-color: #e65100;
+}
