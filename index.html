@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Activity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div class="container">
+      <h1>Pomodoro Timer</h1>
+
+      <!-- Bagian Timer -->
+      <div class="timer">
+        <h2 class="left-align">Timer</h2>
+        <table>
+          <tr>
+            <td><label for="studyTime">Waktu Belajar (menit):</label></td>
+            <td><input type="number" id="studyTime" value="25" min="1" /></td>
+          </tr>
+          <tr>
+            <td><label for="breakTime">Waktu Istirahat (menit):</label></td>
+            <td><input type="number" id="breakTime" value="5" min="1" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <button onclick="startPomodoro()">Mulai</button>
+              <button onclick="stopPomodoro()">Berhenti</button>
+              <button onclick="resetPomodoro()">Reset</button>
+              <button onclick="refreshPomodoro()">Refresh</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <h3 id="timerDisplay">00:00</h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Statistik Waktu Belajar -->
+<div class="study-stats">
+  <h2>Study Statistics</h2>
+</div>
+
+<!-- Grafik Statistik Waktu Belajar -->
+<div class="chart-container">
+  <canvas id="studyChart"></canvas>
+</div>
+
+<!-- Container untuk grid -->
+<div class="grid-container" id="gridContainer">
+
+</div>
+
+      <!-- Bagian Spotify Playlist -->
+      <div class="spotify">
+        <h2>Spotify Playlist</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/1CVMf98U3k5jDHbBwIaZnc?si=euFGgK0ZSUCZ3vu8qXUgfQ&pi=wkWeI0ABTmCXb"
+          width="100%"
+          height="152"
+          frameborder="0"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+
+      <!-- Daftar Tugas (Learning Progress) -->
+      <div class="todo-list">
+        <h2>Learning Progress</h2>
+        <table id="taskTable">
+          <thead>
+            <tr>
+              <th>Mata Pelajaran</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="taskList"></tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="task-input-container">
+      <input type="text" id="newTask" placeholder="Masukkan Mata Pelajaran" />
+      <button class="add-task" onclick="addTask()">Tambah</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
